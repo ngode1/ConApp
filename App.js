@@ -4,9 +4,10 @@ import Navigator from './src/navigation/RootNavigation';
 
 export default class App extends React.Component {
   render() {
+    StatusBar.setBarStyle('dark-content', true);
     return (
         <View style={{flex: 1}}>
-          {/* < StatusBar barStyle={StatusBar.setBarStyle('light-content', true} /> */}
+          < StatusBar />
           <Navigator />
         </View>
     );
