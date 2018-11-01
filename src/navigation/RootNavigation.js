@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, Text, Button } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 import Icon from '@expo/vector-icons/FontAwesome';
+import AboutScreen from '../components/About/About';
+import SpeakersScreen from '../components/Speakers/Speakers';
 
-class ScheduleScreen extends React.Component {
+class ScheduleScreen extends Component {
+    static navigationOptions = {
+        title: 'Schedule',
+    };
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -18,50 +23,6 @@ class ScheduleScreen extends React.Component {
         title = "Go to About"
         onPress = {
             () => this.props.navigation.navigate('About')
-        }
-        />
-      </View>
-    );
-  }
-}
-
-class SpeakersScreen extends React.Component {
-  render() {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Speakers Screen</Text>
-        < Button
-        title = "Go to Schedule"
-        onPress = {
-            () => this.props.navigation.navigate('Schedule')
-        }
-        />
-        < Button
-        title = "Go to About"
-        onPress = {
-            () => this.props.navigation.navigate('About')
-        }
-        />
-      </View>
-    );
-  }
-}
-
-class AboutScreen extends React.Component {
-  render() {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>About Screen</Text>
-        < Button
-        title = "Go to Schedule"
-        onPress = {
-            () => this.props.navigation.navigate('Schedule')
-        }
-        />
-        < Button
-        title = "Go to Speakers"
-        onPress = {
-            () => this.props.navigation.navigate('Speakers')
         }
         />
       </View>
