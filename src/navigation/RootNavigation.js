@@ -4,6 +4,7 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 import Icon from '@expo/vector-icons/FontAwesome';
 import AboutScreen from '../components/About/About';
 import SpeakersScreen from '../components/Speakers/Speakers';
+import SpeakersDetail from '../components/Speakers/SpeakersDetail';
 
 class ScheduleScreen extends Component {
     static navigationOptions = {
@@ -39,6 +40,9 @@ const ScheduleStack = createStackNavigator({
 const SpeakersStack = createStackNavigator({
     Speakers: {
         screen: SpeakersScreen
+    },
+    SpeakersDetail: {
+        screen: SpeakersDetail
     },
 });
 
