@@ -3,8 +3,6 @@ import { View, Image, Text, ScrollView } from 'react-native';
 import styles from './About.style';
 import Icon from '@expo/vector-icons/FontAwesome';
 
-import data from '../../utils/Data';
-
 
 class AboutScreen extends Component {
     static navigationOptions = {
@@ -18,16 +16,16 @@ class AboutScreen extends Component {
           style={styles.banner}
         />
         <View style={styles.container}>
-          <Text style={styles.title}>{data.name}</Text>
+          <Text style={styles.title}>Sample App</Text>
           <View style={styles.info}>
             <Icon name="calendar">
-              <Text>{data.date}</Text>
+              <Text>April 2, 2019</Text>
             </Icon>
             <Icon name="map-pin">
-              <Text>{data.location.city}</Text>
+              <Text>Atlanta, GA</Text>
             </Icon>
           </View>
-          <Text style={styles.description}>{data.description}</Text>
+          < Text style = {styles.description} > Lorem ipsum dolor sit amet, consectetur adipiscing elit.Cras in metus ac turpis cursus suscipit at a nisi.Praesent eu vehicula ante.Nullam viverra diam erat, at venenatis leo rutrum non.Integer vulputate aliquam augue, et hendrerit erat pellentesque in. </Text>
           </View>
       </ScrollView>
     );

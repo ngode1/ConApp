@@ -1,48 +1,53 @@
 import React, { Component } from 'react';
-import { Container, Content, List, ListItem, Thumbnail, Text, Left, Body } from 'native-base';
-import { TouchableOpacity } from 'react-native';
+import { Container, Content, List, ListItem, Thumbnail, Text, Left, Body, View } from 'native-base';
+import axios from 'axios';
 import data from '../../utils/Data';
 
 class SpeakerScreen extends Component {
   static navigationOptions = {
     title: 'Speakers',
   };
-  render() {
+
+  state = { speakers: [] };
+
+  componentWillMount(){
+    axios.get('https://cdn.jsdelivr.net/gh/ngode1/ConApp/src/utils/Data.json')
+      .then(response => this.setState( { speakers: response.data } )
+      );
+  }
+
+  // renderAlbums() {
+  //   return this.state.speakers.map(speakers => 
+  //     <Text key={speakers.name}>{speakers.name}</Text>
+  //   );
+  // }
+
+  render() {  
+    console.log(this.state); 
     return (
       <Container>
         <Content>
-          <TouchableOpacity>
-          <List>
-            <ListItem thumbnail>
-              <Left>
-                <Thumbnail square source={{ uri: data.speakers.avatar }} />
-              </Left>
-              <Body>
-                <Text onPress = {() => this.props.navigation.navigate('SpeakersDetail')} >{data.speakers.name}</Text>
-                <Text note numberOfLines={1}>Its time to build a difference . .</Text>
-              </Body>
+        <List>
+        {
+          this.state.speakers.map(speakers =>
+            <ListItem thumbnail key={speakers.name}>
+            <Left>
+                <Thumbnail square source={speakers.avatar} />
+            </Left>
+            <Body>
+              <Text key={speakers.name}>
+                {speakers.name}
+              </Text>
+              <Text note>
+                {speakers.subtitle}
+              </Text>
+            </Body>
             </ListItem>
-            <ListItem thumbnail>
-              <Left>
-                <Thumbnail square source={{ uri: 'Image URL' }} />
-              </Left>
-              <Body>
-                <Text onPress = {() => this.props.navigation.navigate('SpeakersDetail')} >Sankhadeep</Text>
-                <Text note numberOfLines={1}>Its time to build a difference . .</Text>
-              </Body>
-            </ListItem>
-            <ListItem thumbnail>
-              <Left>
-                <Thumbnail square source={{ uri: 'Image URL' }} />
-              </Left>
-              <Body>
-                <Text>Sankhadeep</Text>
-                <Text note numberOfLines={1}>Its time to build a difference . .</Text>
-              </Body>
-            </ListItem>
-          </List>
-          </TouchableOpacity>
-        </Content>
+              // onPress={()=>this.setState({speaker: l })}
+          )
+        }
+      </List>
+      </Content>
       </Container>
     );
   }
