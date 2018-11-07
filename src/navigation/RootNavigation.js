@@ -5,37 +5,7 @@ import Icon from '@expo/vector-icons/FontAwesome';
 import AboutScreen from '../components/About/About';
 import SpeakersScreen from '../components/Speakers/Speakers';
 import SpeakersDetail from '../components/Speakers/SpeakersDetail';
-
-class ScheduleScreen extends Component {
-    static navigationOptions = {
-        title: 'Schedule',
-    };
-  render() {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Home Screen</Text>
-        < Button
-        title = "Go to Speakers"
-        onPress = {
-            () => this.props.navigation.navigate('Speakers')
-        }
-        />
-        < Button
-        title = "Go to Speaker Details"
-        onPress = {
-            () => this.props.navigation.navigate('SpeakersDetails')
-        }
-        />
-        < Button
-        title = "Go to About"
-        onPress = {
-            () => this.props.navigation.navigate('About')
-        }
-        />
-      </View>
-    );
-  }
-}
+import ScheduleScreen from '../components/Schedule/Schedule';
 
 const ScheduleStack = createStackNavigator(
     {
