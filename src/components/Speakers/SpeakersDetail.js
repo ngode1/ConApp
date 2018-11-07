@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
-import data from '../../utils/Data';
+// import data from '../../utils/Data';
 
 
-class AboutScreen extends Component {
+class SpeakersDetail extends Component {
     static navigationOptions = {
         title: 'Detail',
     };
@@ -22,4 +22,4 @@ class AboutScreen extends Component {
   }
 }
 
-export default AboutScreen;
+export default SpeakersDetail;

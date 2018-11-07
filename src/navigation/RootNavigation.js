@@ -21,6 +21,12 @@ class ScheduleScreen extends Component {
         }
         />
         < Button
+        title = "Go to Speaker Details"
+        onPress = {
+            () => this.props.navigation.navigate('SpeakersDetails')
+        }
+        />
+        < Button
         title = "Go to About"
         onPress = {
             () => this.props.navigation.navigate('About')
@@ -31,18 +37,20 @@ class ScheduleScreen extends Component {
   }
 }
 
-const ScheduleStack = createStackNavigator({
+const ScheduleStack = createStackNavigator(
+    {
     Schedule: {
-        screen: ScheduleScreen
+      screen: ScheduleScreen
     },
 });
 
-const SpeakersStack = createStackNavigator({
+const SpeakersStack = createStackNavigator(
+    {
     Speakers: {
-        screen: SpeakersScreen
+      screen: SpeakersScreen,
     },
     SpeakersDetail: {
-        screen: SpeakersDetail
+      screen: SpeakersDetail,
     },
 });
 
