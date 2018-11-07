@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Content, List, ListItem, Thumbnail, Text, Left, Body, View } from 'native-base';
 import axios from 'axios';
-import data from '../../utils/Data';
 
 class SpeakerScreen extends Component {
   static navigationOptions = {
@@ -11,8 +10,9 @@ class SpeakerScreen extends Component {
   state = { speakers: [] };
 
   componentWillMount(){
-    axios.get('https://cdn.jsdelivr.net/gh/ngode1/ConApp/src/utils/Data.json')
-      .then(response => this.setState( { speakers: response.data } )
+    // axios.get('https://cdn.jsdelivr.net/gh/ngode1/ConApp/src/utils/Data.json')
+    axios.get('https://cdn.jsdelivr.net/gh/ngode1/ConApp/src/utils/Data-raw.json')
+      .then(response => this.setState( { speakers: response.data.speakers } )
       );
   }
 
@@ -30,9 +30,10 @@ class SpeakerScreen extends Component {
         <List>
         {
           this.state.speakers.map(speakers =>
-            <ListItem thumbnail key={speakers.name}>
+            <ListItem thumbnail key={speakers.name} onPress = {
+            () => this.props.navigation.navigate('SpeakerDetail')}>
             <Left>
-                <Thumbnail square source={speakers.avatar} />
+                <Thumbnail square source={{uri: speakers.avatar }} />
             </Left>
             <Body>
               <Text key={speakers.name}>
@@ -43,7 +44,6 @@ class SpeakerScreen extends Component {
               </Text>
             </Body>
             </ListItem>
-              // onPress={()=>this.setState({speaker: l })}
           )
         }
       </List>
