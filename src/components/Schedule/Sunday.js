@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Container, Content, List, ListItem, Text, Body, Segment, Button, Right, Badge, View } from 'native-base';
-import { TouchableOpacity } from 'react-native';
 import axios from 'axios';
 import Icon from '@expo/vector-icons/FontAwesome';
 
-class ScheduleScreen extends Component {
+class Sunday extends Component {
   static navigationOptions = {
     title: 'Schedule',
   };
@@ -20,9 +19,9 @@ class ScheduleScreen extends Component {
   render() {  
     console.log(this.state); 
     return <Container>
-        {/* <View style={{ margin: 20, flexDirection: "row", justifyContent: "space-between" }}>
+        <View style={{ margin: 20, flexDirection: "row", justifyContent: "space-between" }}>
           <View>
-            <Badge style={{marginLeft: 5}} primary>
+            <Badge info style={{marginLeft: 5}}>
               <Text>
                 17
               </Text>
@@ -33,8 +32,7 @@ class ScheduleScreen extends Component {
           </View>
 
           <View>
-            <TouchableOpacity onPress={() => this.props.navigation.navigate('Saturday')}>
-              <Badge bordered info style={{marginLeft: 15}}>
+            <Badge info style={{marginLeft: 15}}>
               <Text>
                 18
               </Text>
@@ -42,11 +40,10 @@ class ScheduleScreen extends Component {
             <Text style={{marginTop: 10}}> 
               Saturday 
             </Text>
-          </TouchableOpacity>
           </View>
 
           <View>
-            <Badge bordered info style={{marginLeft: 10}}>
+            <Badge primary style={{marginLeft: 10}}>
               <Text>
                 19
               </Text>
@@ -56,29 +53,31 @@ class ScheduleScreen extends Component {
             </Text>
           </View>
 
-        </View> */}
+        </View>
         <Content>
-            {this.state.schedule.map(item => {
-          return (<List>
-            <ListItem itemDivider key={item.title}>
-              <Text>
-                {item.title}
-              </Text>
-            </ListItem>
-            <ListItem key={item.index}>
-              <Body>
-                <Text>{item.title}</Text>
-                <Text>{item.data[0].name}</Text>
-              </Body>
-              <Right>
-                <Icon name="plus" onPress={() => alert("Added to your schedule")} />
-              </Right>
-            </ListItem>
-          </List>);
-        })}
+          <List>
+            {this.state.schedule.map(schedule => (
+              <ListItem
+                thumbnail
+                key={schedule.title}
+                onPress={() => "SpeakersDetails"}
+              >
+                <Body>
+                  <Text>{schedule.title}</Text>
+                  <Text>{schedule.data[0].name}</Text>
+                </Body>
+                <Right>
+                  <Icon
+                    name="plus"
+                    onPress={() => alert("Added to your schedule")}
+                  />
+                </Right>
+              </ListItem>
+            ))}
+          </List>
         </Content>
       </Container>;
   }
 }
 
-export default ScheduleScreen;
+export default Sunday;

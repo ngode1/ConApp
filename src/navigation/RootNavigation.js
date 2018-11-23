@@ -6,11 +6,19 @@ import AboutScreen from '../components/About/About';
 import SpeakersScreen from '../components/Speakers/Speakers';
 import SpeakersDetail from '../components/Speakers/SpeakersDetail';
 import ScheduleScreen from '../components/Schedule/Schedule';
+import Saturday from '../components/Schedule/Saturday';
+import ScheduleTabs from '../components/Schedule/ScheduleTabs';
 
 const ScheduleStack = createStackNavigator(
     {
+    STabs: {
+        screen: ScheduleTabs
+    },
     Schedule: {
       screen: ScheduleScreen
+    },
+    Saturday: {
+      screen: Saturday
     },
 });
 
@@ -27,6 +35,12 @@ const SpeakersStack = createStackNavigator(
 const AboutStack = createStackNavigator({
     About: {
         screen: AboutScreen
+    },
+});
+
+const MapStack = createStackNavigator({
+    Map: {
+        screen: Map
     },
 });
 
@@ -68,6 +82,18 @@ export default createBottomTabNavigator(
             )
         }) 
     },
+    Map: { 
+        screen: MapStack,
+        navigationOptions: () => ({
+            tabBarIcon: ({tintColor}) => (
+                <Icon
+                    name="map"
+                    color={tintColor}
+                    size={24}
+                />
+            )
+        }) 
+    },
   },
   {
     // navigationOptions: ({ navigation }) => ({
@@ -96,4 +122,5 @@ export default createBottomTabNavigator(
         },
         tabStyle: {}
     }
-  });
+  }
+);
