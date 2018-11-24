@@ -16,66 +16,46 @@ class ScheduleScreen extends Component {
       .then(response => this.setState( { schedule: response.data.events } )
       );
   }
+  
+  scheduleItems(item) {
+    return (
+      item.data.map(event => {
+        return (
+          <ListItem key={event.name}>
+            <Body>
+              <Text>{event.name}</Text>                
+              <Text>{event.place}</Text>                
+              <Text>{event.time}</Text>               
+            </Body>
+            <Right>
+              <Icon name="plus" onPress={() => alert("Added to your schedule")} />
+            </Right>
+          </ListItem>
+        )
+      })
+    )
+  }
+
+  scheduleTimes() {
+    return(
+      this.state.schedule.map(item => {
+        return (<List key={item.title}>
+          <ListItem itemDivider key={item.title}>
+            <Text key={item.title}>
+              {item.title}
+            </Text>
+          </ListItem>
+          { this.scheduleItems(item) }
+          </List>)
+      })
+    )
+  }
 
   render() {  
-    console.log(this.state); 
+
     return <Container>
-        {/* <View style={{ margin: 20, flexDirection: "row", justifyContent: "space-between" }}>
-          <View>
-            <Badge style={{marginLeft: 5}} primary>
-              <Text>
-                17
-              </Text>
-            </Badge>
-            < Text style={{marginTop: 10}}> 
-              Friday 
-            </Text>
-          </View>
-
-          <View>
-            <TouchableOpacity onPress={() => this.props.navigation.navigate('Saturday')}>
-              <Badge bordered info style={{marginLeft: 15}}>
-              <Text>
-                18
-              </Text>
-            </Badge>
-            <Text style={{marginTop: 10}}> 
-              Saturday 
-            </Text>
-          </TouchableOpacity>
-          </View>
-
-          <View>
-            <Badge bordered info style={{marginLeft: 10}}>
-              <Text>
-                19
-              </Text>
-            </Badge>
-            <Text style={{marginTop: 10}}>
-               Sunday 
-            </Text>
-          </View>
-
-        </View> */}
         <Content>
-            {this.state.schedule.map(item => {
-          return (<List>
-            <ListItem itemDivider key={item.title}>
-              <Text>
-                {item.title}
-              </Text>
-            </ListItem>
-            <ListItem key={item.index}>
-              <Body>
-                <Text>{item.title}</Text>
-                <Text>{item.data[0].name}</Text>
-              </Body>
-              <Right>
-                <Icon name="plus" onPress={() => alert("Added to your schedule")} />
-              </Right>
-            </ListItem>
-          </List>);
-        })}
+          { this.scheduleTimes() }
         </Content>
       </Container>;
   }
