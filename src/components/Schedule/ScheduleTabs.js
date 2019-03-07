@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Header, Tab, Tabs, TabHeading, Text, Button } from 'native-base';
-import Friday from './Schedule';
+import Friday from './Friday';
 import Saturday from './Saturday';
 import Sunday from './Sunday';
 

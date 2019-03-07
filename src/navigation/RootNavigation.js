@@ -5,7 +5,7 @@ import Icon from '@expo/vector-icons/FontAwesome';
 import AboutScreen from '../components/About/About';
 import SpeakersScreen from '../components/Speakers/Speakers';
 import SpeakersDetail from '../components/Speakers/SpeakersDetail';
-import ScheduleScreen from '../components/Schedule/Schedule';
+import Friday from '../components/Schedule/Friday';
 import Saturday from '../components/Schedule/Saturday';
 import Sunday from '../components/Schedule/Sunday';
 import ScheduleTabs from '../components/Schedule/ScheduleTabs';
@@ -18,7 +18,7 @@ const ScheduleStack = createStackNavigator(
             screen: ScheduleTabs
         },
         Friday: {
-            screen: ScheduleScreen
+            screen: Friday
         },
         Saturday: {
             screen: Saturday
