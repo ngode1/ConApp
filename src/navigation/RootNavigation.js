@@ -7,19 +7,25 @@ import SpeakersScreen from '../components/Speakers/Speakers';
 import SpeakersDetail from '../components/Speakers/SpeakersDetail';
 import ScheduleScreen from '../components/Schedule/Schedule';
 import Saturday from '../components/Schedule/Saturday';
+import Sunday from '../components/Schedule/Sunday';
 import ScheduleTabs from '../components/Schedule/ScheduleTabs';
+import TabsNative from '../components/Schedule/TabsNative';
+import Calendar from '../components/Calendar/app';
 
 const ScheduleStack = createStackNavigator(
     {
-    STabs: {
-        screen: ScheduleTabs
-    },
-    Schedule: {
-      screen: ScheduleScreen
-    },
-    Saturday: {
-      screen: Saturday
-    },
+        Tabs: {
+            screen: ScheduleTabs
+        },
+        Friday: {
+            screen: ScheduleScreen
+        },
+        Saturday: {
+            screen: Saturday
+        },
+        Sunday: {
+            screen: Sunday
+        },
 });
 
 const SpeakersStack = createStackNavigator(
@@ -40,7 +46,7 @@ const AboutStack = createStackNavigator({
 
 const MapStack = createStackNavigator({
     Map: {
-        screen: Map
+        screen: Sunday
     },
 });
 

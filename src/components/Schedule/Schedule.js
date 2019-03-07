@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Content, List, ListItem, Text, Body, Segment, Button, Right, Badge, View } from 'native-base';
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity, StyleSheet } from 'react-native';
 import axios from 'axios';
 import Icon from '@expo/vector-icons/FontAwesome';
 
@@ -23,12 +23,12 @@ class ScheduleScreen extends Component {
         return (
           <ListItem key={event.name}>
             <Body>
-              <Text>{event.name}</Text>                
-              <Text>{event.place}</Text>                
-              <Text>{event.time}</Text>               
+              <Text style={{fontFamily: 'Avenir'}}>{event.name}</Text>                
+              <Text style={{fontFamily: 'Avenir'}}>{event.place}</Text>                
+              <Text style={{fontFamily: 'Avenir'}}>{event.time}</Text>               
             </Body>
             <Right>
-              <Icon name="plus" onPress={() => alert("Added to your schedule")} />
+              <Icon style={{fontSize: 20}} name="plus" onPress={() => alert("Added to your schedule")} />
             </Right>
           </ListItem>
         )
@@ -39,14 +39,17 @@ class ScheduleScreen extends Component {
   scheduleTimes() {
     return(
       this.state.schedule.map(item => {
-        return (<List key={item.title}>
+        return (<View style={styles.content} key={item.title}>
+        <List>
           <ListItem itemDivider key={item.title}>
             <Text key={item.title}>
               {item.title}
             </Text>
           </ListItem>
           { this.scheduleItems(item) }
-          </List>)
+          </List>
+        </View>
+        )
       })
     )
   }
@@ -61,4 +64,13 @@ class ScheduleScreen extends Component {
   }
 }
 
+const styles = StyleSheet.create(
+  {
+   // Tab content container
+   content: {
+     flex: 1, // Take up all available space
+     backgroundColor: '#ffffed', // Darker background for content area
+    },
+  }
+);
 export default ScheduleScreen;

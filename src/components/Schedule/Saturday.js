@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Content, List, ListItem, Text, Body, Segment, Button, Right, Badge, View } from 'native-base';
+import { TouchableOpacity, StyleSheet } from 'react-native';
 import axios from 'axios';
 import Icon from '@expo/vector-icons/FontAwesome';
 
@@ -15,69 +16,62 @@ class Saturday extends Component {
       .then(response => this.setState( { schedule: response.data.events } )
       );
   }
+  
+  scheduleItems(item) {
+    return (
+      item.data.map(event => {
+        return (
+          <ListItem key={event.name}>
+            <Body>
+              <Text style={{fontFamily: 'Avenir'}}>{event.name}</Text>                
+              <Text style={{fontFamily: 'Avenir'}}>{event.place}</Text>                
+              <Text style={{fontFamily: 'Avenir'}}>{event.time}</Text>               
+            </Body>
+            <Right>
+              <Icon style={{fontSize: 20}} name="plus" onPress={() => alert("Added to your schedule")} />
+            </Right>
+          </ListItem>
+        )
+      })
+    )
+  }
+
+  scheduleTimes() {
+    return(
+      this.state.schedule.map(item => {
+        return (<View style={styles.content} key={item.title}>
+        <List>
+          <ListItem itemDivider key={item.title}>
+            <Text key={item.title}>
+              {item.title}
+            </Text>
+          </ListItem>
+          { this.scheduleItems(item) }
+          </List>
+        </View>
+        )
+      })
+    )
+  }
 
   render() {  
-    console.log(this.state); 
+
     return <Container>
-        <View style={{ margin: 20, flexDirection: "row", justifyContent: "space-between" }}>
-          <View>
-            <Badge info style={{marginLeft: 5}}>
-              <Text>
-                17
-              </Text>
-            </Badge>
-            < Text style={{marginTop: 10}}> 
-              Friday 
-            </Text>
-          </View>
-
-          <View>
-            <Badge primary style={{marginLeft: 15}}>
-              <Text>
-                18
-              </Text>
-            </Badge>
-            <Text style={{marginTop: 10}}> 
-              Saturday 
-            </Text>
-          </View>
-
-          <View>
-            <Badge info style={{marginLeft: 10}}>
-              <Text>
-                19
-              </Text>
-            </Badge>
-            <Text style={{marginTop: 10}}>
-               Sunday 
-            </Text>
-          </View>
-
-        </View>
         <Content>
-          <List>
-            {this.state.schedule.map(schedule => (
-              <ListItem
-                thumbnail
-                key={schedule.title}
-                onPress={() => "SpeakersDetails"}
-              >
-                <Body>
-                  <Text>{schedule.title}</Text>
-                  <Text>{schedule.data[0].name}</Text>
-                </Body>
-                <Right>
-                  <Icon
-                    name="plus"
-                    onPress={() => alert("Added to your schedule")}
-                  />
-                </Right>
-              </ListItem>
-            ))}
-          </List>
+          { this.scheduleTimes() }
         </Content>
       </Container>;
   }
 }
 
-export default Saturday;
+const styles = StyleSheet.create(
+  {
+   // Tab content container
+   content: {
+     flex: 1, // Take up all available space
+     backgroundColor: '#ffffed', // Darker background for content area
+    },
+  }
+);
+
+export default Saturday
