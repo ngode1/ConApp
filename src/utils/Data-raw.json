@@ -72,13 +72,13 @@
             "data": [{
                     "name": "Canon 101",
                     "time": "8:00 am - 9:00 am",
-                    "place": "Main hallway",
+                    "place": "Room C",
                     "color": "#33E4F0"
                 },
                 {
                     "name": "Craft Circle",
                     "time": "9:00 am - 9:15 am",
-                    "place": "Main hallway",
+                    "place": "Room F",
                     "color": "#33E4F0"
                 }
             ]
