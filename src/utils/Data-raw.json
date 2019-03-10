@@ -11,7 +11,7 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in metus ac turpis cursus suscipit at a nisi. Praesent eu vehicula ante. Nullam viverra diam erat, at venenatis leo rutrum non. Integer vulputate aliquam augue, et hendrerit erat pellentesque in. Suspendisse tempor urna lorem, quis ornare tellus tristique et.",
     "speakers": [
         {
-            "name": "Dawn Schneider",
+            "name": "Sherlock Holmes",
             "bio": "Nisi eiusmod Lorem tempor nulla cillum ullamco. Tempor cupidatat ad duis incididunt ut nulla ea laborum labore occaecat laborum. Proident nostrud ea mollit esse veniam culpa do minim eiusmod. Deserunt pariatur proident excepteur dolor.\r\n",
             "twitter": "esse",
             "github": "occaecat",
@@ -19,7 +19,7 @@
             "avatar": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/profile/profile-512.jpg?6"
         },
         {
-            "name": "Bernard Marquez",
+            "name": "John Watson",
             "bio": "Cillum pariatur ex consectetur enim culpa laboris officia nisi. Nulla quis exercitation non amet incididunt nulla mollit pariatur reprehenderit exercitation irure. Non ea exercitation sit velit mollit est amet laboris veniam do. Ut officia ad labore adipisicing tempor Lorem nisi irure tempor mollit ut quis. Et occaecat consectetur ipsum consequat. Aliquip reprehenderit ea minim incididunt anim irure anim nisi nisi laboris anim. Eu commodo minim ad voluptate cillum deserunt ipsum tempor mollit velit reprehenderit exercitation.\r\n",
             "twitter": "proident",
             "github": "amet",
@@ -67,16 +67,18 @@
             "avatar": "https://relayfm.s3.amazonaws.com/uploads/user/avatar/4/user_avatar_mykehurley_artwork.png"
         }
     ],
-    "events": [{
+    "events": [
+        {
             "title": "8:00 am",
-            "data": [{
+            "data": [
+                {
                     "name": "Canon 101",
                     "time": "8:00 am - 9:00 am",
-                    "place": "Room C",
+                    "place": "Room Monroe",
                     "color": "#33E4F0"
                 },
                 {
-                    "name": "Craft Circle",
+                    "name": "Doctor Strange",
                     "time": "9:00 am - 9:15 am",
                     "place": "Room F",
                     "color": "#33E4F0"
@@ -85,18 +87,19 @@
         },
         {
             "title": "9:15 am",
-            "data": [{
+            "data": [
+                {
                     "name": "A Clinical Study in Cocaine",
                     "time": "9:15 am - 9:30 am",
-                    "place": "Room 2203",
+                    "place": "Room Adler",
                     "color": "#3392F0",
                     "speaker": "John Doe",
                     "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
                 },
                 {
-                    "name": "Fan Art",
+                    "name": "A Look at Fan Art",
                     "time": "9:30 am - 9:45 am",
-                    "place": "Room 2202",
+                    "place": "Room London",
                     "color": "#3392F0",
                     "speaker": "John Doe",
                     "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
@@ -113,7 +116,8 @@
         },
         {
             "title": "10:00 am",
-            "data": [{
+            "data": [
+                {
                     "name": "Cabin Pressure",
                     "time": "10:00 am - 10:15 am",
                     "place": "Room 2203",
@@ -149,7 +153,8 @@
         },
         {
             "title": "11:00 am",
-            "data": [{
+            "data": [
+                {
                     "name": "Revenge of the Nerd",
                     "time": "11:00 am - 11:15 am",
                     "place": "Room 2203",
@@ -177,16 +182,19 @@
         },
         {
             "title": "12:00 pm",
-            "data": [{
-                "name": "Lunch",
-                "time": "12:00 pm - 1:15 pm",
-                "place": "Auditorium",
-                "color": "#33E4F0"
-            }]
+            "data": [
+                {
+                    "name": "Lunch",
+                    "time": "12:00 pm - 1:15 pm",
+                    "place": "Auditorium",
+                    "color": "#33E4F0"
+                }
+            ]
         },
         {
             "title": "1:15 pm",
-            "data": [{
+            "data": [
+                {
                     "name": "ARTC",
                     "time": "1:15 pm - 1:30 pm",
                     "place": "Room 2203",
@@ -214,7 +222,8 @@
         },
         {
             "title": "2:00 pm",
-            "data": [{
+            "data": [
+                {
                     "name": "Granada",
                     "time": "2:00 pm - 2:15 pm",
                     "place": "Room 2203",
@@ -250,7 +259,8 @@
         },
         {
             "title": "3:00 pm",
-            "data": [{
+            "data": [
+                {
                     "name": "Sherlockian Societies",
                     "time": "3:00 pm - 3:15 pm",
                     "place": "Room 2210",
