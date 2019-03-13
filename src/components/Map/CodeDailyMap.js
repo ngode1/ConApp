@@ -14,7 +14,7 @@ import {
 import MapView, { Marker } from "react-native-maps";
 
 const Images = [
-  { uri: "https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Rubytuesdayold.svg/800px-Rubytuesdayold.svg.png" },
+  { uri: "http://www.vector-logo.net/logo_preview/eps/r/Ruby_Tuesday_2.png" },
   { uri: "https://i.imgur.com/N7rlQYt.jpg" },
   { uri: "https://i.imgur.com/UDrH0wm.jpg" },
   { uri: "https://i.imgur.com/Ka8kNST.jpg" }
@@ -31,45 +31,45 @@ export default class screens extends Component {
       {
         coordinate: {
           latitude: 33.6263,
-          longitude: -84.4531,
+          longitude: -84.4605,
         },
-        title: "Ruby Tuesday",
+        title: "Bentley Steak House",
         description: "American Restaurant",
         image: Images[0],
       },
       {
         coordinate: {
-          longitude: 33.6232,
-          latitude: -84.4738,
+          latitude: 33.6270,
+          longitude: -84.4578,
         },
-        title: "Waffle House",
-        description: "Best late night food",
+        title: "Southern Table",
+        description: "Located in the Marriott",
         image: Images[1],
       },
       {
         coordinate: {
-          longitude: -122.6701034,
-          latitude: -84.4751101,
+          latitude: 33.6263,
+          longitude: -84.4531,
         },
-        title: "Third Best Place",
-        description: "This is the third best place in Portland",
+        title: "Ruby Tuesday",
+        description: "Located in the Westin",
         image: Images[2],
       },
-      // {
-      //   coordinate: {
-      //     latitude: 45.521016,
-      //     longitude: -122.6561917,
-      //   },
-      //   title: "Fourth Best Place",
-      //   description: "This is the fourth best place in Portland",
-      //   image: Images[3],
-      // },
+      {
+        coordinate: {
+          latitude: 33.6232,
+          longitude: -84.4739,
+        },
+        title: "Waffle House",
+        description: "This is the fourth best place in Portland",
+        image: Images[3],
+      },
     ],
     region: {
-      latitude: 33.6266194,
-      longitude: -84.4631616,
-      latitudeDelta: 0.0922,
-      longitudeDelta: 0.0421
+      latitude: 33.631,
+      longitude: -84.449,
+      latitudeDelta: 0.04864195044303443,
+      longitudeDelta: 0.040142817690068
     },
   };
 
