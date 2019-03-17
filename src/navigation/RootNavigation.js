@@ -15,6 +15,7 @@ import ScheduleTabs from "../components/Schedule/ScheduleTabs";
 // import TabsNative from '../components/Schedule/TabsNative';
 // import Calendar from '../components/Calendar/app';
 import MapTabs from "../components/Map/MapTabs";
+import Events from "../components/Events";
 
 const ScheduleStack = createStackNavigator({
   Tabs: {
@@ -40,15 +41,21 @@ const SpeakersStack = createStackNavigator({
   }
 });
 
+const MapStack = createStackNavigator({
+  Map: {
+    screen: MapTabs
+  }
+});
+
 const AboutStack = createStackNavigator({
   About: {
     screen: AboutScreen
   }
 });
 
-const MapStack = createStackNavigator({
-  Map: {
-    screen: MapTabs
+const EventStack = createStackNavigator({
+  Events: {
+    screen: Events
   }
 });
 
@@ -70,11 +77,19 @@ export default createBottomTabNavigator(
         )
       })
     },
-    Map: {
+    Maps: {
       screen: MapStack,
       navigationOptions: () => ({
         tabBarIcon: ({ tintColor }) => (
           <Icon name="map" color={tintColor} size={24} />
+        )
+      })
+    },
+    Events: {
+      screen: EventStack,
+      navigationOptions: () => ({
+        tabBarIcon: ({ tintColor }) => (
+          <Icon name="glass" color={tintColor} size={24} />
         )
       })
     },
