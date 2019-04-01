@@ -16,7 +16,7 @@
       "twitter": "sixtobacco",
       "subtitle": "Original Consulting Detective",
       "avatar": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/profile/profile-512.jpg?6",
-      "id": "1"
+      "id": 1
     },
     {
       "name": "John Watson",
@@ -24,7 +24,7 @@
       "twitter": "johnwatson",
       "subtitle": "Blogger",
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7E8qd1Q4h8SKOgqNfwS5cBs6BkQ2EIZRXxiR86lPwwvB559Lbqg",
-      "id": "2"
+      "id": 2
     },
     {
       "name": "Jane Simpson",
@@ -32,7 +32,7 @@
       "twitter": "therealjane",
       "subtitle": "Author. Enthusiast.",
       "avatar": "https://uinames.com/api/photos/female/22.jpg",
-      "id": "3"
+      "id": 3
     },
     {
       "name": "Richard Rodriguez",
@@ -40,7 +40,7 @@
       "twitter": "therichman",
       "subtitle": "TV Critic",
       "avatar": "https://uinames.com/api/photos/male/10.jpg",
-      "id": "4"
+      "id": 4
     },
     {
       "name": "James Kelley",
@@ -48,7 +48,7 @@
       "twitter": "nostrud",
       "subtitle": "Author",
       "avatar": "https://uinames.com/api/photos/male/18.jpg",
-      "id": "5"
+      "id": 5
     },
     {
       "name": "Carol Armstrong",
@@ -56,7 +56,7 @@
       "twitter": "ea",
       "subtitle": "Artist",
       "avatar": "https://uinames.com/api/photos/female/17.jpg",
-      "id": "6"
+      "id": 6
     },
     {
       "name": "Nicole Wheeler",
@@ -64,7 +64,7 @@
       "twitter": "Lorem",
       "subtitle": "Mobile Game Developer",
       "avatar": "https://uinames.com/api/photos/female/11.jpg",
-      "id": "7"
+      "id": 7
     }
   ],
   "events": [
