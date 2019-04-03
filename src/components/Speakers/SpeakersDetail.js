@@ -1,32 +1,20 @@
-import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-
-import data from '../../utils/Data-raw';
-
+import React, { Component } from "react";
+import { View, Text } from "react-native";
 
 class SpeakersDetail extends Component {
-    static navigationOptions = {
-        title: 'Detail',
-    };
-    constructor(props) {
-        super(props);
-        
-        let item = this.props.navigation.state.params.item;
-        this.state={
-            item:item,
-    }
-  }
+  static navigationOptions = {
+    title: "Speaker Detail"
+  };
 
   render() {
+    const { name, subtitle, bio, twitter } = this.props.navigation.state.params;
     return (
-        <View>
-            <Text>{data.name}</Text>
-            <View>
-                <Text>{data.bio}</Text>
-                <Text>{data.twitter}</Text>
-                <Text>{data.github}</Text>
-            </View>
-          </View>
+      <View>
+        <Text>{name}</Text>
+        <Text>{subtitle}</Text>
+        <Text>{bio}</Text>
+        <Text>{twitter}</Text>
+      </View>
     );
   }
 }
