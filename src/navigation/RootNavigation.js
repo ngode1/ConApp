@@ -15,7 +15,7 @@ import ScheduleTabs from "../components/Schedule/ScheduleTabs";
 // import TabsNative from '../components/Schedule/TabsNative';
 // import Calendar from '../components/Calendar/app';
 import MapTabs from "../components/Map/MapTabs";
-import Events from "../components/Events";
+import Events from "../components/Events/Events";
 
 const ScheduleStack = createStackNavigator({
   Tabs: {
