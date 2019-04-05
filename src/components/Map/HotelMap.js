@@ -8,6 +8,7 @@ export default class HotelMap extends Component {
         <Image
           style={{ marginLeft: 70 }}
           source={require("../../../assets/hotelmap.png")}
+          resizeMode="contain"
         />
       </View>
     );
