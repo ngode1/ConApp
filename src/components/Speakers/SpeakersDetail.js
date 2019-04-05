@@ -1,22 +1,25 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
+import styles from "./SpeakersDetailStyle";
+import Icon from "@expo/vector-icons/FontAwesome";
 
-class SpeakersDetail extends Component {
+export default class SpeakersDetail extends Component {
   static navigationOptions = {
     title: "Speaker Detail"
   };
 
   render() {
-    const { name, subtitle, bio, twitter } = this.props.navigation.state.params;
+    const { name, avatar, bio, twitter } = this.props.navigation.state.params;
     return (
-      <View>
-        <Text>{name}</Text>
-        <Text>{subtitle}</Text>
+      <View style={styles.container}>
+        <Image source={{ uri: avatar }} style={styles.photo} />
+        <Text style={styles.name}>{name}</Text>
         <Text>{bio}</Text>
-        <Text>{twitter}</Text>
+        <View style={styles.info}>
+          <Icon style={styles.icon} name="twitter" />
+          <Text>{twitter}</Text>
+        </View>
       </View>
     );
   }
 }
-
-export default SpeakersDetail;

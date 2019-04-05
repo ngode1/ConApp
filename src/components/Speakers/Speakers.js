@@ -12,7 +12,7 @@ import {
 } from "native-base";
 import axios from "axios";
 
-class SpeakerScreen extends Component {
+export default class SpeakerScreen extends Component {
   static navigationOptions = {
     title: "Speakers"
   };
@@ -26,7 +26,7 @@ class SpeakerScreen extends Component {
   }
 
   gotoDetail = item => {
-    this.props.navigation.navigate("SpeakersDetail", { ...item });
+    this.props.navigation.navigate("SpeakerDetail", { ...item });
   };
 
   render() {
@@ -55,17 +55,4 @@ class SpeakerScreen extends Component {
       </Container>
     );
   }
-}
-
-export default SpeakerScreen;
-
-{
-  /* <Button
-  title="Go to Details"
-  onPress={() => {
-    this.props.navigation.navigate("Details", {
-      itemId: 86,
-    });
-  }}
-/>; */
 }
