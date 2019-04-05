@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { View, Text, Button } from "react-native";
+import React from "react";
 import {
   createStackNavigator,
   createBottomTabNavigator
@@ -8,10 +7,8 @@ import Icon from "@expo/vector-icons/FontAwesome";
 import AboutScreen from "../components/About/About";
 import SpeakersScreen from "../components/Speakers/Speakers";
 import SpeakersDetail from "../components/Speakers/SpeakersDetail";
-import Friday from "../components/Schedule/Friday";
-import Saturday from "../components/Schedule/Saturday";
-import Sunday from "../components/Schedule/Sunday";
 import ScheduleTabs from "../components/Schedule/ScheduleTabs";
+import ScheduleDetail from "../components/Schedule/ScheduleDetail";
 // import TabsNative from '../components/Schedule/TabsNative';
 // import Calendar from '../components/Calendar/app';
 import MapTabs from "../components/Map/MapTabs";
@@ -21,14 +18,8 @@ const ScheduleStack = createStackNavigator({
   Tabs: {
     screen: ScheduleTabs
   },
-  Friday: {
-    screen: Friday
-  },
-  Saturday: {
-    screen: Saturday
-  },
-  Sunday: {
-    screen: Sunday
+  ScheduleDetail: {
+    screen: ScheduleDetail
   }
 });
 
@@ -36,7 +27,7 @@ const SpeakersStack = createStackNavigator({
   Speakers: {
     screen: SpeakersScreen
   },
-  SpeakersDetail: {
+  SpeakerDetail: {
     screen: SpeakersDetail
   }
 });
