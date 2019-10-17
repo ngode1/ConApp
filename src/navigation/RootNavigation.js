@@ -1,8 +1,7 @@
 import React from "react";
-import {
-  createStackNavigator,
-  createBottomTabNavigator
-} from "react-navigation";
+import { createAppContainer, createSwitchNavigator } from 'react-navigation';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
+import { createStackNavigator } from 'react-navigation-stack';
 import Icon from "@expo/vector-icons/FontAwesome";
 import AboutScreen from "../components/About/About";
 import SpeakersScreen from "../components/Speakers/Speakers";
@@ -14,83 +13,83 @@ import ScheduleDetail from "../components/Schedule/ScheduleDetail";
 import MapTabs from "../components/Map/MapTabs";
 import Events from "../components/Events/Events";
 
-const ScheduleStack = createStackNavigator({
+const ScheduleStack = createStackNavigator( {
   Tabs: {
     screen: ScheduleTabs
   },
   ScheduleDetail: {
     screen: ScheduleDetail
   }
-});
+} );
 
-const SpeakersStack = createStackNavigator({
+const SpeakersStack = createStackNavigator( {
   Speakers: {
     screen: SpeakersScreen
   },
   SpeakerDetail: {
     screen: SpeakersDetail
   }
-});
+} );
 
-const MapStack = createStackNavigator({
+const MapStack = createStackNavigator( {
   Map: {
     screen: MapTabs
   }
-});
+} );
 
-const AboutStack = createStackNavigator({
+const AboutStack = createStackNavigator( {
   About: {
     screen: AboutScreen
   }
-});
+} );
 
-const EventStack = createStackNavigator({
+const EventStack = createStackNavigator( {
   Events: {
     screen: Events
   }
-});
+} );
 
-export default createBottomTabNavigator(
+export default createAppContainer( createBottomTabNavigator(
   {
     Schedule: {
       screen: ScheduleStack,
-      navigationOptions: () => ({
-        tabBarIcon: ({ tintColor }) => (
-          <Icon name="calendar" color={tintColor} size={24} />
+      navigationOptions: () => ( {
+        tabBarIcon: ( { tintColor } ) => (
+          <Icon name="calendar" color={ tintColor } size={ 24 } />
         )
-      })
+      } )
     },
     Speakers: {
       screen: SpeakersStack,
-      navigationOptions: () => ({
-        tabBarIcon: ({ tintColor }) => (
-          <Icon name="users" color={tintColor} size={24} />
+      navigationOptions: () => ( {
+        tabBarIcon: ( { tintColor } ) => (
+          <Icon name="users" color={ tintColor } size={ 24 } />
         )
-      })
+      } )
     },
     Maps: {
       screen: MapStack,
-      navigationOptions: () => ({
-        tabBarIcon: ({ tintColor }) => (
-          <Icon name="map" color={tintColor} size={24} />
+      navigationOptions: () => ( {
+        tabBarIcon: ( { tintColor } ) => (
+          <Icon name="map" color={ tintColor } size={ 24 } />
         )
-      })
+      } )
     },
     Events: {
       screen: EventStack,
-      navigationOptions: () => ({
-        tabBarIcon: ({ tintColor }) => (
-          <Icon name="glass" color={tintColor} size={24} />
+      navigationOptions: () => ( {
+        tabBarIcon: ( { tintColor } ) => (
+          <Icon name="glass" color={ tintColor } size={ 24 } />
         )
-      })
+      } )
     },
     About: {
       screen: AboutStack,
-      navigationOptions: () => ({
-        tabBarIcon: ({ tintColor }) => (
-          <Icon name="info" color={tintColor} size={24} />
+      navigationOptions: () => ( {
+        tabBarIcon: ( { tintColor } ) => (
+          <Icon name="info" color={ tintColor } size={ 24 } />
         )
-      })
+      } )
     }
   },
   {
@@ -121,4 +120,4 @@ export default createBottomTabNavigator(
       tabStyle: {}
     }
   }
-);
+) );
