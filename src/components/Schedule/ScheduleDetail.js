@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, Text } from "react-native";
+import styles from './ScheduleDetailStyle';
 
 export default class ScheduleDetail extends Component
 {
@@ -13,12 +14,12 @@ export default class ScheduleDetail extends Component
     // const name = this.props.navigation.getParam( 'name', 'Peter' );
     // const time = this.props.navigation.navigate( "ScreenName" )
     return (
-      <View>
-        <Text>{ name }</Text>
-        <Text>{ place }</Text>
-        <Text>{ time }</Text>
-        <Text>{ description }</Text>
-        <Text>{ speaker }</Text>
+      <View style={ styles.container }>
+        <Text style={ styles.name }>{ name }</Text>
+        <Text style={ styles.info }>{ time }</Text>
+        <Text style={ styles.info }>{ place }</Text>
+        <Text style={ styles.description }>{ description }</Text>
+        <Text style={ styles.speaker }>Speaker: { speaker }</Text>
       </View>
     );
   }
