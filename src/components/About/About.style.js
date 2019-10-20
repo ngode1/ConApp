@@ -1,6 +1,6 @@
 import { Dimensions } from "react-native";
 
-const { width } = Dimensions.get("window");
+const { width } = Dimensions.get( "window" );
 
 export default {
   container: {
@@ -14,8 +14,9 @@ export default {
     alignItems: "center"
   },
   description: {
-    marginTop: 10,
-    fontSize: 19
+    fontSize: 16,
+    // color: "grey",
+    marginTop: 15,
   },
   info: {
     flex: 1,
