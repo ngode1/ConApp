@@ -3,11 +3,12 @@ import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createStackNavigator } from 'react-navigation-stack';
 import Icon from "@expo/vector-icons/FontAwesome";
-import AboutScreen from "../components/About/About";
-import SpeakersScreen from "../components/Speakers/Speakers";
-import SpeakersDetail from "../components/Speakers/SpeakersDetail";
 import ScheduleTabs from "../components/Schedule/ScheduleTabs";
 import ScheduleDetail from "../components/Schedule/ScheduleDetail";
+import SpeakersScreen from "../components/Speakers/Speakers";
+import SpeakersDetail from "../components/Speakers/SpeakersDetail";
+import AboutScreen from "../components/About/About";
+import Info from "../components/About/Info";
 // import TabsNative from '../components/Schedule/TabsNative';
 // import Calendar from '../components/Calendar/app';
 import MapTabs from "../components/Map/MapTabs";
@@ -38,8 +39,8 @@ const MapStack = createStackNavigator( {
 } );
 
 const AboutStack = createStackNavigator( {
-  About: {
-    screen: AboutScreen
+  Info: {
+    screen: Info
   }
 } );
 
@@ -112,10 +113,10 @@ export default createAppContainer( createBottomTabNavigator(
     // }),
     tabBarOptions: {
       showLabel: true,
-      activeTintColor: "#F8F8F8",
-      inactiveTintColor: "#586589",
+      activeTintColor: "#586589",
+      inactiveTintColor: "#b8b882",
       style: {
-        backgroundColor: "#171F33"
+        backgroundColor: "#ebebdd"
       },
       tabStyle: {}
     }
