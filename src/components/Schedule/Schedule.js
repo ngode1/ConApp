@@ -4,7 +4,7 @@ import { TouchableOpacity, StyleSheet } from 'react-native';
 import axios from 'axios';
 import Icon from '@expo/vector-icons/FontAwesome';
 
-export default class Sunday extends Component {
+class ScheduleScreen extends Component {
   static navigationOptions = {
     title: 'Schedule',
   };
@@ -73,3 +73,4 @@ const styles = StyleSheet.create(
     },
   }
 );
+export default ScheduleScreen;

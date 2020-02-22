@@ -50,7 +50,7 @@ export default class TPPCard extends Component
               </Text>
               <Left>
                 <Button transparent textStyle={ { color: "#87838B" } }>
-                  <Icon name="logo-github" />
+                  {/* <Icon name="logo-github" /> */ }
                   <Text>1,926 stars</Text>
                 </Button>
               </Left>
