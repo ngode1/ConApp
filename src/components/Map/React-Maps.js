@@ -1,57 +1,68 @@
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 
-export default class App extends React.Component {
-  render() {
+export default class Map extends React.Component
+{
+  render ()
+  {
     return (
       <MapView
-        style={{ flex: 1 }}
-        initialRegion={{
+        style={ { flex: 1 } }
+        initialRegion={ {
           latitude: 33.6266194,
           longitude: -84.4631616,
           // latitudeDelta: 0.006866,
           // longitudeDelta: 0.004757
-          latitudeDelta: 0.0922,
+          latitudeDelta: 0.0422,
           longitudeDelta: 0.0421
-        }}
-        showsUserLocation={true}
-        ShowsMyLocationButton={true}
+          // latitudeDelta: 0.0922,
+          // longitudeDelta: 0.0421
+        } }
+        showsUserLocation={ true }
+        ShowsMyLocationButton={ true }
       >
         <Marker
-          coordinate={{
+          coordinate={ {
             latitude: 33.627,
             longitude: -84.4578
-          }}
-          title={"Southern Table"}
-          description={"Located in the Westin"}
+          } }
+          title={ "Southern Table" }
+          description={ "Located in the Westin" }
         />
         <Marker
-          coordinate={{
+          coordinate={ {
+            latitude: 33.6407,
+            longitude: -84.4462
+          } }
+          title={ "MARTA - Airport Station" }
+          description={ "Just inside the Domestic Terminal." }
+        />
+        <Marker
+          coordinate={ {
             latitude: 33.6263,
             longitude: -84.4605
-          }}
-          title={"Bentley Steak House"}
-          description={"Located in the Marriot"}
-          pinColor={"black"}
+          } }
+          title={ "The Con Hotel" }
+          description={ "Marriott, 4711 Best Road, Atlanta, Georgia 30337 USA" }
+          pinColor={ "black" }
         />
         <Marker
-          coordinate={{
+          coordinate={ {
             latitude: 33.6232,
             longitude: -84.4738
-          }}
-          title={"Waffle House"}
-          description={"1 mile away"}
-          pinColor={"yellow"}
+          } }
+          title={ "Waffle House" }
+          description={ "1 mile away" }
+          pinColor={ "yellow" }
         />
         <Marker
-          coordinate={{
+          coordinate={ {
             latitude: 33.6159,
             longitude: -84.4764
-          }}
-          title={"McDonalds"}
-          description={"The Golden Arches smile upon you benevolently"}
-          image={require("../../../assets/arches2.png")}
+          } }
+          title={ "McDonalds" }
+          description={ "The Golden Arches smile upon you benevolently" }
+          image={ require( "../../../assets/arches2.png" ) }
         />
       </MapView>
     );

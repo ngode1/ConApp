@@ -1,0 +1,397 @@
+{
+  "friday": [ {
+      "title": "5:00 PM",
+      "data": [ {
+          "name": "After Canon Ends",
+          "time": "5:00 pm - 6:00 pm",
+          "place": "Salon E",
+          "color": "#33E4F0",
+          "category": "Discussions",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Con Etiquette",
+          "time": "5:00 pm - 6:00 pm",
+          "place": "Salon F",
+          "color": "#33E4F0",
+          "speaker": "Bendysnatch Cumberbund",
+          "category": "Movies",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+
+        },
+        {
+          "name": "Elementary",
+          "time": "5:00 pm - 6:00 pm",
+          "place": "Alabama",
+          "color": "#33E4F0",
+          "speaker": "Bendysnatch Cumberbund",
+          "category": "Movies",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+
+        },
+        {
+          "name": "Miss Sherlock",
+          "time": "5:00 pm - 6:00 pm",
+          "place": "Tennessee",
+          "color": "#33E4F0",
+          "speaker": "Bendysnatch Cumberbund",
+          "category": "Movies",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+
+        }
+      ]
+    },
+    {
+      "title": "6:00 PM",
+      "data": [ {
+          "name": "Sherlock Holmes is Like",
+          "time": "6 PM - 7 PM",
+          "place": "Salon E",
+          "color": "#3392F0",
+          "speaker": "John Doe",
+          "category": "Discussions",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Sherlock Homes Goes to War",
+          "time": "6 PM - 7 PM",
+          "place": "Salon F",
+          "color": "#3392F0",
+          "speaker": "John Doe",
+          "category": "Fandom",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "ABO (18+)",
+          "time": "6 PM - 7 PM",
+          "place": "Tennessee",
+          "color": "#F05233",
+          "speaker": "John Doe",
+          "category": "TV Shows",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "221 Baking Street",
+          "time": "6 PM - 7 PM",
+          "place": "Florida",
+          "color": "#F05233",
+          "speaker": "John Doe",
+          "category": "TV Shows",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        }
+      ]
+    },
+    {
+      "title": "7:00 PM",
+      "data": [ {
+          "name": "Creativity and Neurodiversity",
+          "time": "7pm - 8pm",
+          "place": "Salon E",
+          "color": "#C12071",
+          "speaker": "Martin Crieff",
+          "category": "Other Media",
+          "description": "Come talk about MJN Air, Talisker, lemons, and the bear polar"
+        },
+        {
+          "name": "How to Scrub Your Fanfic",
+          "time": "7pm - 8pm",
+          "place": "Salon F",
+          "color": "#30C120",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "The Time Out Bin: Cosplay Horror Stories",
+          "time": "7pm - 8pm",
+          "place": "Alabama",
+          "color": "#DEC311",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Arthur ''Continuity'' Doyle",
+          "time": "7pm - 8pm",
+          "place": "Tennessee",
+          "color": "#36BBE4",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        }
+      ]
+    },
+    {
+      "title": "8:00 PM",
+      "data": [ {
+          "name": "AU Panel",
+          "time": "8pm - 9pm",
+          "place": "Salon F",
+          "color": "#C12071",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "AMA Costuming and Cosplay",
+          "time": "8pm - 9pm",
+          "place": "Alabama",
+          "color": "#808080",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Yuri!!! on Ice",
+          "time": "11:30 am - 12:00 pm",
+          "place": "Tennessee",
+          "color": "#DEC311",
+          "speaker": "John Doe",
+          "category": "Fandom",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Discrimination within the Canon",
+          "time": "8pm - 9pm",
+          "place": "Florida",
+          "color": "#DEC311",
+          "speaker": "John Doe",
+          "category": "Fandom",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        }
+      ]
+    },
+    {
+      "title": "9:00 PM",
+      "data": [ {
+          "name": "D&D Level 0: Homeless Network Edition ",
+          "time": "9pm - 10pm",
+          "place": "Salon F",
+          "color": "#33E4F0",
+          "category": "Lunch"
+        },
+        {
+          "name": "Drug Use in the Victorian Era",
+          "time": "9pm - 10pm",
+          "place": "Alabama",
+          "color": "#33E4F0",
+          "category": "Lunch"
+        },
+        {
+          "name": "PWP Fic",
+          "time": "9pm - 10pm",
+          "place": "Tennessee",
+          "color": "#33E4F0",
+          "category": "Lunch"
+        },
+        {
+          "name": "Flavortown",
+          "time": "9pm - 10pm",
+          "place": "Florida",
+          "color": "#33E4F0",
+          "category": "Lunch"
+        }
+      ]
+    },
+    {
+      "title": "10:00 PM",
+      "data": [ {
+        "name": "Fandom Burlesque (18+)",
+        "time": "10pm - 11pm",
+        "place": "Salon E",
+        "color": "#3392F0",
+        "speaker": "John Doe",
+        "category": "Performances",
+        "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+      } ]
+    },
+    {
+      "title": "11:00 PM",
+      "data": [ {
+        "name": "Dance Party",
+        "time": "11 pm - 1 AM",
+        "place": "Room 2203",
+        "color": "#C12071",
+        "speaker": "John Doe",
+        "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+      } ]
+    }
+  ],
+  "saturday": [ {
+      "title": "10:00 am",
+      "data": [ {
+          "name": "SH Dinos",
+          "time": "8:00 am - 9:00 am",
+          "place": "Room Monroe",
+          "color": "#33E4F0"
+        },
+        {
+          "name": "Flavor Town",
+          "time": "9:00 am - 9:15 am",
+          "place": "Room F",
+          "color": "#33E4F0"
+        }
+      ]
+    },
+    {
+      "title": "10:30 am",
+      "data": [ {
+          "name": "Long After Sherlock",
+          "time": "9:15 am - 9:30 am",
+          "place": "Room Adler",
+          "color": "#3392F0",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Cooking with Ms. Hudson",
+          "time": "9:30 am - 9:45 am",
+          "place": "Room London",
+          "color": "#3392F0",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Biology with Molly Hooper",
+          "time": "9:45 am - 10:00 am",
+          "place": "Room 2204",
+          "color": "#F05233",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        }
+      ]
+    },
+    {
+      "title": "11:00 am",
+      "data": [ {
+          "name": "Cabin Pressure",
+          "time": "10:00 am - 10:15 am",
+          "place": "Room 2203",
+          "color": "#C12071",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Female Detectives",
+          "time": "10:15 am - 10:30 am",
+          "place": "Room 2202",
+          "color": "#30C120",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Trivia Game",
+          "time": "10:30 am - 10:45 am",
+          "place": "Room 2204",
+          "color": "#DEC311",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Jane Austen",
+          "time": "10:45 am - 11:00 am",
+          "place": "Room 2201",
+          "color": "#36BBE4",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        }
+      ]
+    },
+    {
+      "title": "11:30 am",
+      "data": [ {
+          "name": "Revenge of the Nerd",
+          "time": "11:00 am - 11:15 am",
+          "place": "Room 2203",
+          "color": "#C12071",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Carnation Books",
+          "time": "11:15 am - 11:30 am",
+          "place": "Room 2202",
+          "color": "#808080",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "ABO Fic",
+          "time": "11:30 am - 12:00 pm",
+          "place": "Room 2204",
+          "color": "#DEC311",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        }
+      ]
+    },
+    {
+      "title": "12:00 pm",
+      "data": [ {
+        "name": "Lunch",
+        "time": "12:00 pm - 1:15 pm",
+        "place": "Auditorium",
+        "color": "#33E4F0"
+      } ]
+    },
+    {
+      "title": "1:15 pm",
+      "data": [ {
+          "name": "ARTC",
+          "time": "1:15 pm - 1:30 pm",
+          "place": "Room 2203",
+          "color": "#3392F0",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Sherlock and Dinosaurs",
+          "time": "1:30 pm - 1:45 pm",
+          "place": "Room 2202",
+          "color": "#3392F0",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Costume Contest",
+          "time": "1:45 pm - 2:00 pm",
+          "place": "Room 2204",
+          "color": "#F05233",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        }
+      ]
+    },
+    {
+      "title": "2:00 pm",
+      "data": [ {
+          "name": "Granada",
+          "time": "2:00 pm - 2:15 pm",
+          "place": "Room 2203",
+          "color": "#C12071",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Sherlolly",
+          "time": "2:15 pm - 2:30 pm",
+          "place": "Room 2202",
+          "color": "#30C120",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "Fannish Estate Planning",
+          "time": "2:30 pm - 2:45 pm",
+          "place": "Room 2204",
+          "color": "#DEC311",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        },
+        {
+          "name": "The Art of Flat Sharing",
+          "time": "2:45 pm - 3:00 pm",
+          "place": "Room 2201",
+          "color": "#36BBE4",
+          "speaker": "John Doe",
+          "description": "Vivamus lobortis dapibus quam vitae sagittis. In in commodo nisi. In aliquam ante vel mi bibendum, maximus molestie ex pellentesque. Proin maximus efficitur efficitur. Aliquam a dolor ultricies, dapibus metus vitae, rutrum ex. Curabitur bibendum tempor ullamcorper"
+        }
+      ]
+    }
+  ]
+}
