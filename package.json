@@ -10,7 +10,7 @@
     "postinstall": "rndebugger-open --expo"
   },
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "expo": "^35.0.0",
     "native-base": "^2.8.1",
     "react": "16.8.3",
